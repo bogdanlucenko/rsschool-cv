@@ -15,3 +15,12 @@ My goal is to become a Front-End developer and work remotely. I devote almost al
 
 ---
 
+### My skills so far:
+- Strong knowledge of HTML and CSS
+- Using the BEM methodology
+- Using SCSS Preprocessors
+- An adaptive layout of the site 
+- Basic knowledge of JavaScript
+- Basic knowledge of Git version control system
+
+---

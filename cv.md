@@ -24,3 +24,9 @@ My goal is to become a Front-End developer and work remotely. I devote almost al
 - Basic knowledge of Git version control system
 
 ---
+
+### My projects:
+- [CutSpace](https://bogdanlucenko.github.io/CutSpace) `--->`
+  [Link to the repository](https://github.com/bogdanlucenko/CutSpace)
+- [Tanatos](https://bogdanlucenko.github.io/Tanatos/) `--->` 
+  [Link to the repository](https://github.com/bogdanlucenko/Tanatos)

@@ -3,10 +3,4 @@
     "linthtml-config-htmlacademy": "^1.0.3",
     "stylelint-config-htmlacademy": "^1.1.4"
   }
-  {
-    "extends": "linthtml-config-htmlacademy"
-   }
-   {
-    "extends": "stylelint-config-htmlacademy"
-   }
 }

@@ -1,38 +1,110 @@
 
 @font-face {
-	font-family: 'Cabin';
-	src: url('../fonts/Cabin-Bold.eot');
-	src: local('☺'), url('../fonts/Cabin-Bold.woff') format('woff'), url('../fonts/Cabin-Bold.ttf') format('truetype'), url('../fonts/Cabin-Bold.svg') format('svg');
+	font-family: "Cabin";
+	src: url("../fonts/Cabin-Bold.eot");
+	src: local("☺"), url("../fonts/Cabin-Bold.woff") format("woff"), url("../fonts/Cabin-Bold.ttf") format("truetype"), url("../fonts/Cabin-Bold.svg") format("svg");
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Cabin';
-	src: url('../fonts/Cabin-Medium.eot');
-	src: local('☺'), url('../fonts/Cabin-Medium.woff') format('woff'), url('../fonts/Cabin-Medium.ttf') format('truetype'), url('../fonts/Cabin-Medium.svg') format('svg');
+	font-family: "Cabin";
+	src: url("../fonts/Cabin-Medium.eot");
+	src: local("☺"), url("../fonts/Cabin-Medium.woff") format("woff"), url("../fonts/Cabin-Medium.ttf") format("truetype"), url("../fonts/Cabin-Medium.svg") format("svg");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Cabin';
-	src: url('../fonts/Cabin-Regular.eot');
-	src: local('☺'), url('../fonts/Cabin-Regular.woff') format('woff'), url('../fonts/Cabin-Regular.ttf') format('truetype'), url('../fonts/Cabin-Regular.svg') format('svg');
+	font-family: "Cabin";
+	src: url("../fonts/Cabin-Regular.eot");
+	src: local("☺"), url("../fonts/Cabin-Regular.woff") format("woff"), url("../fonts/Cabin-Regular.ttf") format("truetype"), url("../fonts/Cabin-Regular.svg") format("svg");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Cabin';
-	src: url('../fonts/Cabin-SemiBold.eot');
-	src: local('☺'), url('../fonts/Cabin-SemiBold.woff') format('woff'), url('../fonts/Cabin-SemiBold.ttf') format('truetype'), url('../fonts/Cabin-SemiBold.svg') format('svg');
+	font-family: "Cabin";
+	src: url("../fonts/Cabin-SemiBold.eot");
+	src: local("☺"), url("../fonts/Cabin-SemiBold.woff") format("woff"), url("../fonts/Cabin-SemiBold.ttf") format("truetype"), url("../fonts/Cabin-SemiBold.svg") format("svg");
 	font-weight: 600;
 	font-style: normal;
 }
 
 
 body {
-  font-family: 'Cabin';
+  font: normal 16px "Cabin", sans-serif;
+  background: linear-gradient(90deg, rgba(34,34,46,1) 0%, rgb(66, 66, 86) 50%, rgba(34,34,46,1) 100%);
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: violet;
+}
+
+a:visited {
+  color: #FFC905;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.info {
+
+  display: flex;
+  justify-content: space-between;
+  color:black;
   background-color: #fff;
+
+  &-avatar {
+    max-width: 50%;
+  }
+
+  &-text {
+    padding: 66px 14px 6px 34px;
+    max-width: 50%;
+
+    &Title {
+      margin-top: 0px;
+      font-weight: 700;
+      font-size: 36px;
+    }
+
+    &SubTitle {
+      padding: 3px 5px;
+      margin-top: 0px;
+      font-weight: 400;
+      font-size: 19px;
+      background-color: #FFC905;
+      box-sizing: border-box;
+      width: 137px;
+      border-radius: 2.5px;
+    }
+
+    &AboutMe {
+      position:relative;
+
+      &::after {
+        content:" ";
+        width: 17px;
+        height: 2px;
+        background: #FFC905;
+        position: absolute;
+        top: 35px;
+        left: 0px;
+      }
+    }
+  }
 }

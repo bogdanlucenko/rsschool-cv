@@ -28,8 +28,73 @@
   font-style: normal;
 }
 body {
-  font-family: "Cabin";
+  font: normal 16px "Cabin", sans-serif;
+  background: linear-gradient(90deg, #22222e 0%, #424256 50%, #22222e 100%);
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: violet;
+}
+
+a:visited {
+  color: #FFC905;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  color: black;
   background-color: #fff;
+}
+.info-avatar {
+  max-width: 50%;
+}
+.info-text {
+  padding: 66px 14px 6px 34px;
+  max-width: 50%;
+}
+.info-textTitle {
+  margin-top: 0px;
+  font-weight: 700;
+  font-size: 36px;
+}
+.info-textSubTitle {
+  padding: 3px 5px;
+  margin-top: 0px;
+  font-weight: 400;
+  font-size: 19px;
+  background-color: #FFC905;
+  box-sizing: border-box;
+  width: 137px;
+  border-radius: 2.5px;
+}
+.info-textAboutMe {
+  position: relative;
+}
+.info-textAboutMe::after {
+  content: " ";
+  width: 17px;
+  height: 2px;
+  background: #FFC905;
+  position: absolute;
+  top: 35px;
+  left: 0px;
 }
 
 /*# sourceMappingURL=styles.css.map */

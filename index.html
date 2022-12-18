@@ -18,8 +18,8 @@
           <img class="info-avatar" src="./accets/avatar.jpg" alt="рhoto Bohdan Lutsenko">
           <div class="info-text">
            <h1 class="info-textTitle">Bohdan Lutsenko</h1>
-           <h3 class="info-textSubTitle">Web Developer</h3>
-           <h2 class="info-textAboutMe">About me</h2>
+           <h2 class="info-textSubTitle">Web Developer</h2>
+           <h3 class="info-textAboutMe">About me</h3>
            <p>My goal is to become a Front-End developer and work remotely. I devote almost all my free time to studying programming languages ​​and English.
             I believe in myself and in the fact that I can achieve what I want and no matter how long it takes me,
             the main thing is to work hard and make the appointed path.</p>
@@ -27,16 +27,78 @@
          </div>
       </section>
     </header>
-    <main>
-      <aside></aside>
-      <article>
-        <section></section>
-        <section></section>
-        <section></section>
+    <main class="main">
+      <aside class="main-aside">
+        <div class="main-MyProjects">
+          <h3 class="main-titles">My projects</h3>
+          <ul>
+            <li><a href="https://bogdanlucenko.github.io/CutSpace/" target="black">CutSpace</a> ( <a href="https://github.com/bogdanlucenko/CutSpace" target="black">link to repository</a> )</li>
+            <li><a href="https://bogdanlucenko.github.io/Tanatos/" target="black">Tanatos</a> ( <a href="https://github.com/bogdanlucenko/Tanatos" target="black">link to repository</a> )</li>
+          </ul>
+        </div>
+        <div class="main-CompletedCourses">
+          <h3 class="main-titles">Completed courses</h3>
+          <ul>
+            <li>Front-end Basic course from <a href="https://ithillel.ua/courses/front-end-basic" target="black">Hillel IT school</a></li>
+            <li>Distance intensive elementary level course from <a href="https://greenforest.com.ua/" target="black">Green Forest</a></li>
+          </ul>
+        </div>
+        <div class="main-knowledge">
+          <h3 class="main-titles">Languages</h3>
+          <ul>
+            <li>Pre-Intermediate English level</li>
+            <li>Also constantly train live communication with native speakers</li>
+            <li>Russian - Native</li>
+            <li>Ukrainian - Upper-Intermediate</li>
+          </ul>
+        </div>
+        <div class="main-contacts">
+          <h3 class="main-titles">Contacts:</h3>
+          <ul>
+            <li>Phone number: <a class="tel-color" href="tel:+31638976724;">+31-638-97-67-24</a></li>
+            <li>Discord: bohdanlutsenko#9192</li>
+            <li><a href="https://www.linkedin.com/in/bohdan-lutsenko-b7b378258/" target="black">LinkedIn</a></li>
+            <li><a href="https://t.me/bogdan_kapkan" target="black">Telegram</a></li>
+          </ul>
+        </div>
+      </aside>
+      <article class="main-article">
+        <h2 class="main-titles">Code example :</h2>
+        <section class="code-example">
+          <h5>Excercise from <a href="https://www.codewars.com/users/bohdanlutsenko" target="black">сodewars</a></h5>
+            <pre data-trimmed="true">
+					    <code data-language="javascript">
+  <span class="comment">// Given an integral number,
+    determine if it's a square number:</span>
+    <span class="function">var</span> <span class="def">isSquare</span> = <span class="function">function</span>(<span class="def">n</span>){
+      <span class="function">let</span> <span class="def">a</span> = Math.<span class="property">sqrt</span>(<span class="property">n</span>)
+    <span class="function">if</span>(Number.<span class="property">isInteger</span>(<span class="property">a</span>) == <span class="atom">false</span>)
+        <span class="function">return</span> <span class="atom">false</span>; <span class="comment">// fix me</span>
+    <span class="function">if</span>(<span class="property">a</span>*<span class="property">a</span> === <span class="property">n</span>) {
+        <span class="function">return</span> <span class="atom">true</span>;
+      }
+    }         </code>
+            </pre>
+        </section>
+        <section class="my-skills">
+          <h3 class="main-titles">My skills so far:</h3>
+          <ul>
+            <li>Strong knowledge of HTML and CSS</li>
+            <li>Using the BEM methodology</li>
+            <li>Using SCSS Preprocessors</li>
+            <li>An adaptive layout of the site</li>
+            <li>Basic knowledge of JavaScript</li>
+            <li>Basic knowledge of Git version control system</li>
+          </ul>
+        </section>
       </article>
     </main>
     <footer>
-      <nav></nav>
+      <nav class="footer">
+        <a class="footer-link" href="https://github.com/bogdanlucenko" target="black"><img src="./accets/github-icon.svg" alt="git hub"><p>Visit my GitHub</p></a>
+        <p>&copy; 2022</p>
+        <a href="https://rs.school/js/"><img src="./accets/rsschool-icon.svg"  height="30" alt="rsschool"></a>
+      </nav>
     </footer>
 	</div>
 </body>

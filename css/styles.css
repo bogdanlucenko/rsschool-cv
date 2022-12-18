@@ -31,6 +31,7 @@ body {
   font: normal 16px "Cabin", sans-serif;
   background: linear-gradient(90deg, #22222e 0%, #424256 50%, #22222e 100%);
   color: #fff;
+  line-height: 24px;
 }
 
 a {
@@ -50,6 +51,9 @@ a:visited {
   color: #FFC905;
 }
 
+/* li {
+  font-weight: 100;
+} */
 .container {
   max-width: 750px;
   margin: auto;
@@ -66,11 +70,12 @@ a:visited {
   max-width: 50%;
 }
 .info-text {
-  padding: 66px 14px 6px 34px;
+  padding: 50px 34px 6px 34px;
   max-width: 50%;
 }
 .info-textTitle {
   margin-top: 0px;
+  margin-bottom: 13px;
   font-weight: 700;
   font-size: 36px;
 }
@@ -85,6 +90,7 @@ a:visited {
   border-radius: 2.5px;
 }
 .info-textAboutMe {
+  font-size: 23px;
   position: relative;
 }
 .info-textAboutMe::after {
@@ -95,6 +101,100 @@ a:visited {
   position: absolute;
   top: 35px;
   left: 0px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.main-aside {
+  min-width: 50%;
+  background: #292935;
+}
+.main-article {
+  min-width: 50%;
+  background: #22222E;
+}
+
+pre {
+  font-size: 14px;
+  background: #2c323d;
+  border: 1px solid #222226;
+  font-family: monospace;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.comment {
+  color: gray;
+}
+
+.function {
+  color: #b294bb;
+}
+
+.atom {
+  color: #dc7069;
+}
+
+.property {
+  color: #81a2be;
+}
+
+.def {
+  color: #de935f;
+}
+
+.main-article {
+  box-sizing: border-box;
+  padding: 15px;
+}
+.main-aside {
+  box-sizing: border-box;
+  padding: 15px;
+}
+.main-titles {
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  position: relative;
+}
+.main-titles::after {
+  content: " ";
+  width: 17px;
+  height: 2px;
+  background: #FFC905;
+  position: absolute;
+  top: 35px;
+  left: 0px;
+}
+
+.my-skills {
+  margin-top: 50px;
+}
+
+.tel-color {
+  color: #FFC905;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #16161d;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+}
+.footer-link p {
+  padding-left: 10px;
+}
+.footer p {
+  color: #FFC905;
 }
 
 /*# sourceMappingURL=styles.css.map */

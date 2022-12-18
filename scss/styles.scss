@@ -1,0 +1,219 @@
+
+@font-face {
+	font-family: "Cabin";
+	src: url("../fonts/Cabin-Bold.eot");
+	src: local("☺"), url("../fonts/Cabin-Bold.woff") format("woff"), url("../fonts/Cabin-Bold.ttf") format("truetype"), url("../fonts/Cabin-Bold.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cabin";
+	src: url("../fonts/Cabin-Medium.eot");
+	src: local("☺"), url("../fonts/Cabin-Medium.woff") format("woff"), url("../fonts/Cabin-Medium.ttf") format("truetype"), url("../fonts/Cabin-Medium.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cabin";
+	src: url("../fonts/Cabin-Regular.eot");
+	src: local("☺"), url("../fonts/Cabin-Regular.woff") format("woff"), url("../fonts/Cabin-Regular.ttf") format("truetype"), url("../fonts/Cabin-Regular.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cabin";
+	src: url("../fonts/Cabin-SemiBold.eot");
+	src: local("☺"), url("../fonts/Cabin-SemiBold.woff") format("woff"), url("../fonts/Cabin-SemiBold.ttf") format("truetype"), url("../fonts/Cabin-SemiBold.svg") format("svg");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@mixin yellow-line {
+  &::after {
+    content:" ";
+    width: 17px;
+    height: 2px;
+    background: #FFC905;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+  }
+}
+
+
+body {
+  font: normal 16px "Cabin", sans-serif;
+  background: linear-gradient(90deg, rgba(34,34,46,1) 0%, rgb(66, 66, 86) 50%, rgba(34,34,46,1) 100%);
+  color: #fff;
+  line-height: 24px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: violet;
+}
+
+a:visited {
+  color: #FFC905;
+}
+
+/* li {
+  font-weight: 100;
+} */
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.info {
+
+  display: flex;
+  justify-content: space-between;
+  color:black;
+  background-color: #fff;
+
+  &-avatar {
+    max-width: 50%;
+  }
+
+  &-text {
+    padding: 50px 34px 6px 34px;
+    max-width: 50%;
+
+    &Title {
+      margin-top: 0px;
+      margin-bottom: 13px;
+      font-weight: 700;
+      font-size: 36px;
+    }
+
+    &SubTitle {
+      padding: 3px 5px;
+      margin-top: 0px;
+      font-weight: 400;
+      font-size: 19px;
+      background-color: #FFC905;
+      box-sizing: border-box;
+      width: 137px;
+      border-radius: 2.5px;
+    }
+
+    &AboutMe {
+      font-size: 23px;
+      position:relative;
+
+      @include yellow-line;
+    }
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+
+  &-aside {
+    min-width: 50%;
+    background: #292935;
+  }
+
+  &-article {
+    min-width: 50%;
+    background: #22222E;
+  }
+}
+
+pre {
+  font-size: 14px;
+  background: #2c323d;
+  border: 1px solid #222226 ;
+  font-family: monospace;
+  border-radius: 10px;
+  box-sizing:border-box;
+
+}
+
+.comment {
+  color: gray;
+}
+
+.function {
+  color: #b294bb;
+}
+
+.atom {
+  color: #dc7069;
+}
+
+.property {
+  color: #81a2be;
+}
+
+.def {
+   color: #de935f;
+}
+
+.main {
+
+  &-article {
+    box-sizing: border-box;
+    padding: 15px;
+  }
+
+  &-aside {
+    box-sizing: border-box;
+    padding: 15px;
+  }
+
+  &-titles {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    position:relative;
+
+    @include yellow-line;
+  }
+}
+
+.my-skills {
+  margin-top: 50px;
+}
+
+.tel-color {
+  color: #FFC905;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(22, 22, 29);
+  box-sizing:border-box;
+  padding: 15px;
+
+  &-link {
+    display: flex;
+    align-items: center;
+
+    & p {
+      padding-left: 10px;
+    }
+  }
+
+  & p {
+    color: #FFC905;
+  }
+}

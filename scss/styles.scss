@@ -78,6 +78,22 @@ a:visited {
   padding-top: 30px;
 }
 
+@media (max-width: 767px) {
+  .container {
+    min-width: none;
+  }
+
+  .info {
+    flex-direction: column;
+
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+}
+
 .info {
 
   display: flex;
@@ -120,6 +136,17 @@ a:visited {
   }
 }
 
+@media (max-width: 767px) {
+  .info-avatar {
+    max-width: none;
+  }
+
+  .info-text {
+    max-width: none;
+  }
+
+}
+
 .main {
   display: flex;
   justify-content: space-between;
@@ -143,6 +170,21 @@ pre {
   border-radius: 10px;
   box-sizing:border-box;
 
+}
+
+@media (max-width: 340px) {
+
+  .info-textTitle {
+    font-size: 29px;
+  }
+
+  pre {
+    display: flex;
+  }
+
+  code {
+    font-size: 0.9em;
+  }
 }
 
 .comment {
